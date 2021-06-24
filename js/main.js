@@ -1,5 +1,5 @@
 'use strict';
-const MAX_ENEMY = 5;
+const MAX_ENEMY = 7;
 // объявление переменных
 const score = document.querySelector('.score');
 const start = document.querySelector('.start');
@@ -13,7 +13,7 @@ const scoreRecord = 0;
 // music.classList.add('visually-hidden');
 
 // добавление музыки вариант 2
-const music = new Audio('music/phonk.mp3');
+const music = new Audio('music/forsage.mp3');
 const accident = new Audio('music/accident.mp3');
 // console.dir(music); поиск элемента
 
@@ -40,9 +40,9 @@ const setting = {
 function getQuantityElementElements(heightElement) {
 	return document.documentElement.clientHeight / heightElement +1;
 }
-// const getRandomEnemy = (max) => Math.floor((Math.random() * max) + 1);
+const getRandomEnemy = (max) => Math.floor((Math.random() * max) + 1);
 
-const getRandomEnemy = (max) => Math.floor((Math.random() * max));
+// const getRandomEnemy = (max) => Math.floor((Math.random() * max));
 
 
 
@@ -153,5 +153,6 @@ function moveEnemy() {
 		}
 	});
 }
+
 // item.y = -150 * setting.traffic;
 // путь с ../ на /
