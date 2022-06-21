@@ -2,10 +2,13 @@
   "name": "game_js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "main.js",
+  
+  "devDependencies": {
+    "electron": "^19.0.5"
+  },
   "scripts": {
-    "start": "index.html"
+    "start": "electron js/main.js"
   },
   "repository": {
     "type": "git",
